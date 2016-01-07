@@ -5,7 +5,7 @@ GPP=g++
 GCC=gcc
 OUTFILE="TOTP.so"
 
-COMPILE_FLAGS=-c -O3 -w -DLINUX -fPIC -I lib/sdk/amx/
+COMPILE_FLAGS=-c -O3 -w -DLINUX -I lib/sdk/amx/
 
 
 
