@@ -38,6 +38,8 @@ extern void *pAMXFunctions;
 
 int compute_code(const char *key, unsigned long tm)
 {
+	if (key == NULL) return -1;
+	
 	int secretLen = (strlen(key) + 7) / 8 * BITS_PER_BASE32_CHAR;
 
 	if (secretLen <= 0 || secretLen > 100) return -1;
